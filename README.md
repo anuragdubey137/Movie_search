@@ -9,15 +9,15 @@ Modern movie search & rating landing page built with React + Vite. Dark theme wi
 --Responsive: Works on all devices
 --Smooth Animations: Entrance effects and micro-interactions
 
-## Quick Start
+# Quick Start
 
-bash# Install dependencies
+## Install dependencies
 npm install
 
-# Start development server
+## Start development server
 npm run dev
 
-# Build for production
+## Build for production
 npm run build
 
 Star this repo if you found it helpful!!
