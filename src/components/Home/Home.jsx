@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Search, Star, Play, TrendingUp, Users, Award, ChevronRight, Film, Sparkles } from 'lucide-react';
+import { Search, Star, Play, TrendingUp, ChevronRight, Film, Sparkles } from 'lucide-react';
 
- export const MovieLandingPage = () => {
+export const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [activeFeature, setActiveFeature] = useState(0);
   const [searchTerm, setSearchTerm] = useState('');
@@ -47,26 +47,6 @@ import { Search, Star, Play, TrendingUp, Users, Award, ChevronRight, Film, Spark
         <div className="absolute top-40 right-20 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-1000"></div>
         <div className="absolute bottom-20 left-40 w-80 h-80 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-2000"></div>
       </div>
-
-      {/* Navigation */}
-      <nav className={`relative z-10 px-6 py-4 transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <Film className="w-8 h-8 text-purple-400" />
-            <span className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-              CineVault
-            </span>
-          </div>
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#" className="hover:text-purple-400 transition-colors">Movies</a>
-            <a href="#" className="hover:text-purple-400 transition-colors">Reviews</a>
-            <a href="#" className="hover:text-purple-400 transition-colors">Trending</a>
-            <button className="bg-gradient-to-r from-purple-500 to-blue-500 px-6 py-2 rounded-full hover:scale-105 transition-transform">
-              Sign Up
-            </button>
-          </div>
-        </div>
-      </nav>
 
       {/* Hero Section */}
       <div className={`relative z-10 px-6 py-20 transition-all duration-1000 delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
@@ -211,19 +191,8 @@ import { Search, Star, Play, TrendingUp, Users, Award, ChevronRight, Film, Spark
           </button>
         </div>
       </div>
-
-      {/* Footer */}
-      <footer className="relative z-10 px-6 py-12 border-t border-white/10">
-        <div className="max-w-7xl mx-auto text-center text-gray-400">
-          <div className="flex items-center justify-center space-x-2 mb-4">
-            <Film className="w-6 h-6 text-purple-400" />
-            <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-              CineVault
-            </span>
-          </div>
-          <p>&copy; 2025 CineVault. All rights reserved. Made with ❤️ for movie lovers.</p>
-        </div>
-      </footer>
     </div>
   );
 };
+
+export default Home;
