@@ -1,6 +1,6 @@
 # CineVault - Movie Landing Page
 
-Modern movie search & rating landing page built with React + Vite. Dark theme with animated gradients and glassmorphism effects.
+Modern movie search & rating site frontend built with React + Vite. Dark theme with animated gradients and glassmorphism effects.
 
 ## Features
 
